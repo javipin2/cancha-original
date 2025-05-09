@@ -7,11 +7,11 @@ app = Flask(__name__)
 CORS(app)
 
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',  # Ingresa tu contraseña aquí
-    'database': 'cancha_dueño',
-    'port': 3306
+    'host': 'gondola.proxy.rlwy.net',  # Host de Railway
+    'user': 'root',  # Usuario de Railway
+    'password': 'MoFLWaJIAlyWignWbYdIDCtAvIUDQMyo',  # Contraseña obtenida de Railway
+    'database': 'railway',  # Nombre de la base de datos en Railway
+    'port': 13868  # Puerto asignado por Railway
 }
 
 @app.route('/canchas', methods=['GET'])
